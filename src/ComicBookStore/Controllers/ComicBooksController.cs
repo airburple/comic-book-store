@@ -11,21 +11,7 @@ namespace ComicBookStore.Controllers
 
         public ActionResult Detail()
         {
-
-           
-
-            
-
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Tuesday)
-            {
-                return Redirect("/");
-            }
-            return new ContentResult
-            {
-
-                Content = "hello from the other side."
-
-            };
+            return View();
         }
     }
 }
