@@ -24,10 +24,14 @@ namespace ComicBookStore.Controllers
                 return HttpNotFound();
             }
             var comicBook = _comicBookRepo.GetComicBook((int)id);
-               
-           
 
             return View(comicBook);
+        }
+
+        public ActionResult Index()
+        {
+            var comicBooks = _comicBookRepo.GetComicBooks();
+            return View(comicBooks);
         }
     }
 }

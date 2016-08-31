@@ -57,8 +57,13 @@ namespace ComicBookStore.Data
             new Artist() { Name = "Jeff Smith", Role = "Letters" }
         },
         Favorite = false
-    }
+             }
         };
+
+        public ComicBook[] GetComicBooks()
+        {
+            return _comicBooks;
+        }
 
         public ComicBook GetComicBook(int id)
         {
