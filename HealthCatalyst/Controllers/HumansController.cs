@@ -12,10 +12,8 @@ namespace HealthCatalyst.Controllers
 
         {
 
-            return new ContentResult()
-            {
-                Content = "You are home!"
-            };
+            return View();
+
         }
     }
 }
